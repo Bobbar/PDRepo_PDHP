@@ -434,6 +434,10 @@ char *menuResolveParam2Text(struct menuitem *item)
 
 static char *menuResolveDialogTitle(struct menudialogdef *dialogdef)
 {
+	if (dialogdef->flags & MENUDIALOGFLAG_LITERAL_TEXT) {
+		return (const char*)dialogdef->title;
+	}
+
 	return menuResolveText(dialogdef->title, dialogdef);
 }
 

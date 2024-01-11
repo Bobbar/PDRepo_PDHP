@@ -1581,6 +1581,7 @@ static inline float sqrtf(float value)
 #define MENUDIALOGFLAG_0400              0x0400
 #define MENUDIALOGFLAG_DROPOUTONCLOSE    0x0800
 #define MENUDIALOGFLAG_1000              0x1000
+#define MENUDIALOGFLAG_LITERAL_TEXT      0x2000
 
 #define MENUDIALOGSTATE_PREOPEN    0
 #define MENUDIALOGSTATE_OPENING    1

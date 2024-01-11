@@ -12,6 +12,7 @@
 #include "game/pak.h"
 #include "bss.h"
 #include "data.h"
+#include "string.h"
 #include "types.h"
 
 u32 g_CheatsActiveBank0;
@@ -481,7 +482,7 @@ char *cheatGetName(s32 cheat_id)
 	return langGet(g_Cheats[cheat_id].nametextid);
 }
 
-static MenuItemHandlerResult menuhandlerUnlockEverything(s32 operation, struct menuitem* item, union handlerdata* data)
+static s32 menuhandlerUnlockEverything(s32 operation, struct menuitem* item, union handlerdata* data)
 {
 	if (operation == MENUOP_SET) {
 		gamefileUnlockEverything();
