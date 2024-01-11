@@ -429,6 +429,10 @@ char *menuResolveText(u32 thing, void *dialogoritem)
 
 char *menuResolveParam2Text(struct menuitem *item)
 {
+	if (item->flags & MENUITEMFLAG_LITERAL_TEXT) {
+		return (const char*)item->param2;
+	}
+
 	return menuResolveText(item->param2, item);
 }
 
