@@ -8425,7 +8425,7 @@ static bool bgunAmmotypeAllowsUnlimitedAmmo(u32 ammotype)
 			return false;
 		}
 		break;
-	case AMMOTYPE_PSYCHOSIS:
+	//case AMMOTYPE_PSYCHOSIS:
 	case AMMOTYPE_17:
 	case AMMOTYPE_BUG:
 	case AMMOTYPE_MICROCAMERA:
