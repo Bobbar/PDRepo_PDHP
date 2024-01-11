@@ -4657,3 +4657,5 @@ enum weaponnum {
 #define BODY_DARK_NEGOTIATOR  0x96
 
 #endif
+
+#define MAX_PLAYERS            4
