@@ -11,6 +11,7 @@
 
 #define bool s32
 #define ubool u32
+#define uintptr_t u32
 
 typedef s32 PakErr1;
 typedef s32 PakErr2;
